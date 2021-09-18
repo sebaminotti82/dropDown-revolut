@@ -1,0 +1,149 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+header{
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(187, 215, 238);
+}
+.header_l{
+    float: left;
+    width: 30%;
+    height: 100%;
+    border-right: 1px solid rgb(218, 214, 214);
+}
+
+.logo{
+    float: left;
+    width: 40%;
+    height: 100%;
+    
+}
+.logo img{
+    
+    width: 80%;
+    height: 90%;
+}
+.info ul{
+ list-style: none;
+}
+.info ul li{
+    float: left;
+    margin-left: 15px;
+    line-height: 10vh;
+}
+.info ul li a{
+    text-decoration: none;
+    color: #3d3d3d;
+    font-family: sans-serif;
+    font-size: 0.7em;
+}
+
+.header_r{
+    display: flex;
+    flex-direction: row;
+
+}
+.hamburger{
+    position: absolute;
+    display: none;
+    right: 2px;
+}
+.hamburger i{
+    font-size: 1.5em;
+    line-height: 10vh;
+    margin-left: 5px;
+}
+
+.menu-hamburger{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(13, 66, 110);
+    display: none;
+}
+.menu-close{
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.menu-close i{
+    color: white;
+    font-size: 1.4em ;
+}
+.box{
+    width: calc(100% / 5);
+    height: 10vh;
+   
+}
+.box ul {
+    list-style: none;
+}
+.title_menu{
+    line-height: 10vh;
+    text-align: center;
+    cursor: pointer;
+    color: #3d3d3d;
+    font-family: sans-serif;
+    font-size: 0.7em;
+}
+.app{
+    background-color: rgb(234, 71, 255);
+    padding: 5px 25px;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    margin-right: 30px;
+}
+.menu{
+    z-index: 999;
+    border: 1px solid rgb(182, 234, 247);
+    box-shadow: 0px 0px 2px 2px rgb(182, 234, 247) ;
+    margin-top: 20px;
+    height: auto;
+    border-radius: 5px;
+    display: none;
+}
+.active{
+    display: block;
+}
+
+.sub-menu a{
+    text-decoration: none;
+    font-size: 1em;
+    color: #3d3d3d;
+}
+.sub-menu{
+    margin-top: -10px;
+}
+.sub-menu a:hover{
+    border-bottom: 0.8px solid rgb(0, 102, 128);
+}
+
+
+/* media query */
+
+@media screen and (max-width:750px) {
+    
+    .header_l{
+        width: 60%;
+    }
+    .responsive {
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .applicazione{
+         margin-right: 100px;
+    }
+
+    
+}
